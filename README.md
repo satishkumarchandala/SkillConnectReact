@@ -1,6 +1,65 @@
+# Skill Connect
+
+## Project Structure
+
+- client/ (React frontend)
+- server/ (Node/Express backend)
+
+## Frontend (React)
+
+From the client directory:
+
+- `npm install`
+- `npm start`
+
+## Backend API Notes
+
+## Backend API Notes
+
+### Provider Search
+
+Endpoint: `GET /api/v1/providers/search`
+
+Query params:
+- `q`: text search (Atlas Search placeholder)
+- `skills`: comma-separated list (e.g. `plumbing,painting`)
+- `lat`, `lng`: coordinates
+- `radiusKm`: number
+- `priceMin`, `priceMax`: numbers
+- `ratingMin`: number (0–5)
+- `page`, `limit`
+
+Atlas Search placeholder:
+- Toggle with `ATLAS_SEARCH_ENABLED=true`
+- Index name via `ATLAS_SEARCH_INDEX`
+- Current placeholder only searches `profile.name`; expand as you denormalize search fields.
+
+Sample Atlas Search index fields:
+- `profile.name` (text)
+- `providerProfile.skills` (text)
+
+## Backend (Node/Express)
+
+### Environment
+Copy [server/.env.example](server/.env.example) to `server/.env` and set values.
+
+### Run API
+From the server directory:
+
+- `npm install`
+- `npm run dev`
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Dashboard Routes (UI)
+
+- Customer: /customer
+- Provider: /provider
+- Admin: /admin
 
 ## Available Scripts
 

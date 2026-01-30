@@ -1,0 +1,145 @@
+.customer-dashboard {
+  padding: 2.5rem 1.5rem;
+  color: var(--text-dark);
+}
+
+.customer-header {
+  margin-bottom: 2rem;
+}
+
+.customer-section {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  margin-bottom: 1.5rem;
+}
+
+.customer-input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.customer-table {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.customer-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 2fr 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  background: #f8fafc;
+  font-size: 0.9rem;
+}
+
+.customer-header-row {
+  font-weight: 600;
+  background: #e2e8f0;
+}
+
+.customer-row-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.customer-row-actions button {
+  background: var(--accent-primary);
+  color: #fff;
+  border: none;
+  padding: 0.35rem 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.customer-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.customer-notifications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.customer-list li {
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.customer-list li.read {
+  opacity: 0.6;
+}
+
+.customer-list li.active button {
+  background: #e2e8f0;
+}
+
+.customer-list button {
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: transparent;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  cursor: pointer;
+}
+
+.customer-messaging {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+}
+
+.customer-messages {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.customer-messages-list {
+  display: grid;
+  gap: 0.75rem;
+  max-height: 260px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.customer-message {
+  background: #ffffff;
+  padding: 0.75rem;
+  border-radius: 12px;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.customer-message small {
+  color: #64748b;
+}
+
+.customer-message-form {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.customer-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.customer-error {
+  color: #b91c1c;
+  margin-top: 0.75rem;
+}

@@ -1,0 +1,61 @@
+.services-filters {
+  margin-top: 24px;
+  background: var(--bg-soft);
+  padding: 16px;
+  border-radius: 16px;
+  display: grid;
+  gap: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.services-filter-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.services-filter-row label {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.services-range {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.services-range-input {
+  width: 100%;
+}
+
+.services-filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.services-checkboxes {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.services-toggle {
+  display: flex;
+  gap: 8px;
+}
+
+.services-toggle-btn {
+  background: var(--bg-muted);
+  color: var(--text-dark);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.services-toggle-btn.active {
+  background: var(--accent-primary);
+  color: var(--text-light);
+}
